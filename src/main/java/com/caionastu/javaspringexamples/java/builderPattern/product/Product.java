@@ -13,7 +13,7 @@ import java.util.UUID;
 @Getter
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 @ToString
-public class Product {
+class Product {
     private UUID id;
     private String name;
     private BigDecimal unitPrice;
@@ -24,11 +24,11 @@ public class Product {
     private String longDescription;
     private LocalDateTime createdAt;
 
-    public static ProductBuilder builder(String name, BigDecimal unitPrice, BigDecimal unitsInStock) {
+    static ProductBuilder builder(String name, BigDecimal unitPrice, BigDecimal unitsInStock) {
         return new ProductBuilder(name, unitPrice, unitsInStock);
     }
 
-    public static final class ProductBuilder {
+    static final class ProductBuilder {
         private final UUID id;
         private final String name;
         private final BigDecimal unitPrice;

@@ -5,7 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import java.math.BigDecimal;
 
 @Slf4j
-public class ProductMain {
+class ProductMain {
     public static void main(String[] args) {
         Product product1 = Product.builder("Product 1", BigDecimal.valueOf(1.37), BigDecimal.TEN)
                 .build();
