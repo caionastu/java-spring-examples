@@ -1,7 +1,6 @@
 package com.caionastu.javaspringexamples.java.supplier;
 
 import lombok.AllArgsConstructor;
-import lombok.ToString;
 
 import java.awt.*;
 import java.util.function.Supplier;
